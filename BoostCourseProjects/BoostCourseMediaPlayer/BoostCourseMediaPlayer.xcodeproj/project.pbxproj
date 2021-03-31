@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA8CADB2611D60E00F8CC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8CADA2611D60E00F8CC20 /* AppDelegate.swift */; };
+		CEA8CADD2611D60E00F8CC20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8CADC2611D60E00F8CC20 /* SceneDelegate.swift */; };
+		CEA8CADF2611D60E00F8CC20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8CADE2611D60E00F8CC20 /* ViewController.swift */; };
+		CEA8CAE22611D60E00F8CC20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA8CAE02611D60E00F8CC20 /* Main.storyboard */; };
+		CEA8CAE42611D60E00F8CC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA8CAE32611D60E00F8CC20 /* Assets.xcassets */; };
+		CEA8CAE72611D60E00F8CC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA8CAE52611D60E00F8CC20 /* LaunchScreen.storyboard */; };
+		CEA8CAF22611D60E00F8CC20 /* BoostCourseMediaPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8CAF12611D60E00F8CC20 /* BoostCourseMediaPlayerTests.swift */; };
+		CEA8CAFD2611D60E00F8CC20 /* BoostCourseMediaPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8CAFC2611D60E00F8CC20 /* BoostCourseMediaPlayerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA8CAEE2611D60E00F8CC20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA8CACF2611D60E00F8CC20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA8CAD62611D60E00F8CC20;
+			remoteInfo = BoostCourseMediaPlayer;
+		};
+		CEA8CAF92611D60E00F8CC20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA8CACF2611D60E00F8CC20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA8CAD62611D60E00F8CC20;
+			remoteInfo = BoostCourseMediaPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEA8CAD72611D60E00F8CC20 /* BoostCourseMediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoostCourseMediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA8CADA2611D60E00F8CC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA8CADC2611D60E00F8CC20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEA8CADE2611D60E00F8CC20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA8CAE12611D60E00F8CC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEA8CAE32611D60E00F8CC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA8CAE62611D60E00F8CC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA8CAE82611D60E00F8CC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA8CAED2611D60E00F8CC20 /* BoostCourseMediaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoostCourseMediaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA8CAF12611D60E00F8CC20 /* BoostCourseMediaPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostCourseMediaPlayerTests.swift; sourceTree = "<group>"; };
+		CEA8CAF32611D60E00F8CC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA8CAF82611D60E00F8CC20 /* BoostCourseMediaPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoostCourseMediaPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA8CAFC2611D60E00F8CC20 /* BoostCourseMediaPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostCourseMediaPlayerUITests.swift; sourceTree = "<group>"; };
+		CEA8CAFE2611D60E00F8CC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA8CAD42611D60E00F8CC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA8CAEA2611D60E00F8CC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA8CAF52611D60E00F8CC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEA8CACE2611D60E00F8CC20 = {
+			isa = PBXGroup;
+			children = (
+				CEA8CAD92611D60E00F8CC20 /* BoostCourseMediaPlayer */,
+				CEA8CAF02611D60E00F8CC20 /* BoostCourseMediaPlayerTests */,
+				CEA8CAFB2611D60E00F8CC20 /* BoostCourseMediaPlayerUITests */,
+				CEA8CAD82611D60E00F8CC20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA8CAD82611D60E00F8CC20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8CAD72611D60E00F8CC20 /* BoostCourseMediaPlayer.app */,
+				CEA8CAED2611D60E00F8CC20 /* BoostCourseMediaPlayerTests.xctest */,
+				CEA8CAF82611D60E00F8CC20 /* BoostCourseMediaPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA8CAD92611D60E00F8CC20 /* BoostCourseMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8CADA2611D60E00F8CC20 /* AppDelegate.swift */,
+				CEA8CADC2611D60E00F8CC20 /* SceneDelegate.swift */,
+				CEA8CADE2611D60E00F8CC20 /* ViewController.swift */,
+				CEA8CAE02611D60E00F8CC20 /* Main.storyboard */,
+				CEA8CAE32611D60E00F8CC20 /* Assets.xcassets */,
+				CEA8CAE52611D60E00F8CC20 /* LaunchScreen.storyboard */,
+				CEA8CAE82611D60E00F8CC20 /* Info.plist */,
+			);
+			path = BoostCourseMediaPlayer;
+			sourceTree = "<group>";
+		};
+		CEA8CAF02611D60E00F8CC20 /* BoostCourseMediaPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8CAF12611D60E00F8CC20 /* BoostCourseMediaPlayerTests.swift */,
+				CEA8CAF32611D60E00F8CC20 /* Info.plist */,
+			);
+			path = BoostCourseMediaPlayerTests;
+			sourceTree = "<group>";
+		};
+		CEA8CAFB2611D60E00F8CC20 /* BoostCourseMediaPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8CAFC2611D60E00F8CC20 /* BoostCourseMediaPlayerUITests.swift */,
+				CEA8CAFE2611D60E00F8CC20 /* Info.plist */,
+			);
+			path = BoostCourseMediaPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA8CAD62611D60E00F8CC20 /* BoostCourseMediaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA8CB012611D60E00F8CC20 /* Build configuration list for PBXNativeTarget "BoostCourseMediaPlayer" */;
+			buildPhases = (
+				CEA8CAD32611D60E00F8CC20 /* Sources */,
+				CEA8CAD42611D60E00F8CC20 /* Frameworks */,
+				CEA8CAD52611D60E00F8CC20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoostCourseMediaPlayer;
+			productName = BoostCourseMediaPlayer;
+			productReference = CEA8CAD72611D60E00F8CC20 /* BoostCourseMediaPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA8CAEC2611D60E00F8CC20 /* BoostCourseMediaPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA8CB042611D60E00F8CC20 /* Build configuration list for PBXNativeTarget "BoostCourseMediaPlayerTests" */;
+			buildPhases = (
+				CEA8CAE92611D60E00F8CC20 /* Sources */,
+				CEA8CAEA2611D60E00F8CC20 /* Frameworks */,
+				CEA8CAEB2611D60E00F8CC20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA8CAEF2611D60E00F8CC20 /* PBXTargetDependency */,
+			);
+			name = BoostCourseMediaPlayerTests;
+			productName = BoostCourseMediaPlayerTests;
+			productReference = CEA8CAED2611D60E00F8CC20 /* BoostCourseMediaPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEA8CAF72611D60E00F8CC20 /* BoostCourseMediaPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA8CB072611D60E00F8CC20 /* Build configuration list for PBXNativeTarget "BoostCourseMediaPlayerUITests" */;
+			buildPhases = (
+				CEA8CAF42611D60E00F8CC20 /* Sources */,
+				CEA8CAF52611D60E00F8CC20 /* Frameworks */,
+				CEA8CAF62611D60E00F8CC20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA8CAFA2611D60E00F8CC20 /* PBXTargetDependency */,
+			);
+			name = BoostCourseMediaPlayerUITests;
+			productName = BoostCourseMediaPlayerUITests;
+			productReference = CEA8CAF82611D60E00F8CC20 /* BoostCourseMediaPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA8CACF2611D60E00F8CC20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CEA8CAD62611D60E00F8CC20 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CEA8CAEC2611D60E00F8CC20 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CEA8CAD62611D60E00F8CC20;
+					};
+					CEA8CAF72611D60E00F8CC20 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CEA8CAD62611D60E00F8CC20;
+					};
+				};
+			};
+			buildConfigurationList = CEA8CAD22611D60E00F8CC20 /* Build configuration list for PBXProject "BoostCourseMediaPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA8CACE2611D60E00F8CC20;
+			productRefGroup = CEA8CAD82611D60E00F8CC20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA8CAD62611D60E00F8CC20 /* BoostCourseMediaPlayer */,
+				CEA8CAEC2611D60E00F8CC20 /* BoostCourseMediaPlayerTests */,
+				CEA8CAF72611D60E00F8CC20 /* BoostCourseMediaPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA8CAD52611D60E00F8CC20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA8CAE72611D60E00F8CC20 /* LaunchScreen.storyboard in Resources */,
+				CEA8CAE42611D60E00F8CC20 /* Assets.xcassets in Resources */,
+				CEA8CAE22611D60E00F8CC20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA8CAEB2611D60E00F8CC20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA8CAF62611D60E00F8CC20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA8CAD32611D60E00F8CC20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA8CADF2611D60E00F8CC20 /* ViewController.swift in Sources */,
+				CEA8CADB2611D60E00F8CC20 /* AppDelegate.swift in Sources */,
+				CEA8CADD2611D60E00F8CC20 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA8CAE92611D60E00F8CC20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA8CAF22611D60E00F8CC20 /* BoostCourseMediaPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA8CAF42611D60E00F8CC20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA8CAFD2611D60E00F8CC20 /* BoostCourseMediaPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA8CAEF2611D60E00F8CC20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA8CAD62611D60E00F8CC20 /* BoostCourseMediaPlayer */;
+			targetProxy = CEA8CAEE2611D60E00F8CC20 /* PBXContainerItemProxy */;
+		};
+		CEA8CAFA2611D60E00F8CC20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA8CAD62611D60E00F8CC20 /* BoostCourseMediaPlayer */;
+			targetProxy = CEA8CAF92611D60E00F8CC20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEA8CAE02611D60E00F8CC20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA8CAE12611D60E00F8CC20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA8CAE52611D60E00F8CC20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA8CAE62611D60E00F8CC20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEA8CAFF2611D60E00F8CC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEA8CB002611D60E00F8CC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA8CB022611D60E00F8CC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoostCourseMediaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.malibin.BoostCourseMediaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEA8CB032611D60E00F8CC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoostCourseMediaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.malibin.BoostCourseMediaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEA8CB052611D60E00F8CC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoostCourseMediaPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.malibin.BoostCourseMediaPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoostCourseMediaPlayer.app/BoostCourseMediaPlayer";
+			};
+			name = Debug;
+		};
+		CEA8CB062611D60E00F8CC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoostCourseMediaPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.malibin.BoostCourseMediaPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoostCourseMediaPlayer.app/BoostCourseMediaPlayer";
+			};
+			name = Release;
+		};
+		CEA8CB082611D60E00F8CC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoostCourseMediaPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.malibin.BoostCourseMediaPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoostCourseMediaPlayer;
+			};
+			name = Debug;
+		};
+		CEA8CB092611D60E00F8CC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoostCourseMediaPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.malibin.BoostCourseMediaPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoostCourseMediaPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA8CAD22611D60E00F8CC20 /* Build configuration list for PBXProject "BoostCourseMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA8CAFF2611D60E00F8CC20 /* Debug */,
+				CEA8CB002611D60E00F8CC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA8CB012611D60E00F8CC20 /* Build configuration list for PBXNativeTarget "BoostCourseMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA8CB022611D60E00F8CC20 /* Debug */,
+				CEA8CB032611D60E00F8CC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA8CB042611D60E00F8CC20 /* Build configuration list for PBXNativeTarget "BoostCourseMediaPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA8CB052611D60E00F8CC20 /* Debug */,
+				CEA8CB062611D60E00F8CC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA8CB072611D60E00F8CC20 /* Build configuration list for PBXNativeTarget "BoostCourseMediaPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA8CB082611D60E00F8CC20 /* Debug */,
+				CEA8CB092611D60E00F8CC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEA8CACF2611D60E00F8CC20 /* Project object */;
+}
