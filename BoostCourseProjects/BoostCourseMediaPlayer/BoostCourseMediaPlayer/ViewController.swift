@@ -20,7 +20,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addViews()
+//        addViews()
         self.initializePlayer()
     }
     
