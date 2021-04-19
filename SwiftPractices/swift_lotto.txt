@@ -1,0 +1,156 @@
+import Foundation
+
+enum LottoError: Error {
+    case UnExpectedLottoMatchCount(_ count: Int)
+}
+
+final class LottoNumber: CustomStringConvertible, Equatable, Comparable {
+    static let MIN_NUMBER = 1
+    static let MAX_NUMBER = 45
+    static let ALL_NUMBERS: Array<LottoNumber> = (MIN_NUMBER...MAX_NUMBER).map{ LottoNumber(number: $0) }
+    
+    private let number: Int
+    
+    private init(number: Int){
+        self.number = number   
+    }
+    
+    static func of(_ number: Int) -> LottoNumber{
+        return ALL_NUMBERS[number + 1]
+    }     
+        
+    static func ==(left: LottoNumber, right: LottoNumber) -> Bool {
+        return left.number == right.number
+    }
+    
+    static func < (lhs: LottoNumber, rhs: LottoNumber) -> Bool {
+        return lhs.number < rhs.number
+    }
+    
+    static func > (lhs: LottoNumber, rhs: LottoNumber) -> Bool {
+        return lhs.number > rhs.number
+    }
+    
+    public var description: String {
+        return "\(number)"
+    }
+}
+
+final class LottoTicket: CustomStringConvertible {
+    private let lottoNumbers: Array<LottoNumber>
+    
+    init(_ lottoNumbers: Array<LottoNumber>){
+        self.lottoNumbers = lottoNumbers
+    }
+    
+    init(_ numbers: Int...) {
+        self.lottoNumbers = numbers.map{ LottoNumber.of($0) }
+    }
+    
+    func has(_ lottoNumber: LottoNumber) -> Bool {
+        return self.lottoNumbers.contains(lottoNumber)
+    }
+    
+    func countMatches(_ other: LottoTicket) -> Int {
+        return self.lottoNumbers.filter { other.has($0) }.count
+    }
+    
+    public var description: String {
+        return "\(self.lottoNumbers.description)"
+    }
+}
+
+enum LottoPrize : Int {
+    case FIRST_PRIZE = 6
+    case SECOND_PRIZE = 52
+    case THIRD_PRIZE = 5
+    case FOURTH_PRIZE = 4
+    case FIFTH_PRIZE = 3
+    case LOSE = 0
+    
+    static func find(_ matchCount: Int, _ isMatchBonus: Bool) throws -> LottoPrize{
+        if(matchCount < 0 || matchCount > 6){
+            throw LottoError.UnExpectedLottoMatchCount(matchCount)
+        }
+        if matchCount == 5 && isMatchBonus {
+            return .SECOND_PRIZE
+        }
+        guard let resultPrize = LottoPrize(rawValue: matchCount) else {
+            return LOSE
+        }
+        return resultPrize
+    }
+    
+    func needBonusNumber() -> Bool {
+        return self == .SECOND_PRIZE
+    }
+}
+
+final class WinningLottoTicket {
+    private let winnigTicket: LottoTicket
+    private let bonusNumber: LottoNumber
+    
+    init(_ winnigTicket: LottoTicket, _ bonusNumber: LottoNumber){
+        self.winnigTicket = winnigTicket
+        self.bonusNumber = bonusNumber
+    }
+    
+    func match(_ lottoTicket: LottoTicket) throws -> LottoPrize {
+        let matchCount = self.winnigTicket.countMatches(lottoTicket)
+        let isContainsBonus = lottoTicket.has(bonusNumber)
+        return try LottoPrize.find(matchCount, isContainsBonus)
+    }
+}
+
+final class LottoTickets: CustomStringConvertible {
+    private let lottoTickets: Array<LottoTicket>
+    
+    init(_ lottoTickets: Array<LottoTicket>){
+        self.lottoTickets = lottoTickets
+    }
+    
+    public var description: String {
+        return "\(self.lottoTickets.description)"
+    }
+    
+    func getLottoPrize(_ winnigTicket: WinningLottoTicket) throws -> [LottoPrize : Int] {
+        let lottoPrizes = try self.lottoTickets.map { try winnigTicket.match($0) }
+        var prizeMap = [LottoPrize:Int]()
+        for lottoPrize in lottoPrizes {
+            if let count = prizeMap[lottoPrize]  {
+                prizeMap[lottoPrize]! = count + 1
+            } else {
+                prizeMap[lottoPrize] = 1
+            }
+        }
+        return prizeMap
+        // return Dictionary<LottoPrize, Int>(grouping: lottoPrizes, by: { $0.count }) 
+    }
+}
+
+protocol LottoTicketDispensor{
+    
+    func getLottoTickets(_ amount: Int) -> LottoTickets
+}
+
+final class RandomLottoTicketDispensor: LottoTicketDispensor {
+    private let allLottoNumbers = LottoNumber.ALL_NUMBERS
+    
+    func getLottoTickets(_ amount: Int) -> LottoTickets {
+        let lottoTickets =  (1...amount).map{ _ in createRandomTicket() }
+        return LottoTickets(lottoTickets)
+    }
+    
+    private func createRandomTicket() -> LottoTicket {
+        let suffledLottoNumbers = allLottoNumbers.shuffled()[0...5]
+        return LottoTicket(suffledLottoNumbers.sorted())
+    }
+}
+
+let lottoTicketDispensor: LottoTicketDispensor = RandomLottoTicketDispensor()
+let randomTickets = lottoTicketDispensor.getLottoTickets(100)
+print(randomTickets)
+
+let winningTicket = WinningLottoTicket(LottoTicket(1,2,3,4,5,6),LottoNumber.of(7))
+
+print(try randomTickets.getLottoPrize(winningTicket))
